@@ -7,7 +7,6 @@
     <% @messages.each do |message| %>
       <span class="label label-info"><%= message.name %></span>
       <%= message.body %>
-      <span style="background-color:#ffcc99">年齢：</span>
       <%= message.age %>
       (<%= link_to "edit" , edit_message_path(message) %>
        <%= link_to "destroy" , message , method: :delete, data: { confirm: '削除してよろしいですか？' } %>
